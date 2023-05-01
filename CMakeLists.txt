@@ -38,7 +38,7 @@ install(FILES ${QM_FILES} DESTINATION /usr/share/cutefish-texteditor/translation
 install(TARGETS cutefish-texteditor RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
 install(FILES
-    cutefish-texteditor.desktop
+    cutefish-editor.desktop
     DESTINATION /usr/share/applications/
     COMPONENT Runtime
 )
