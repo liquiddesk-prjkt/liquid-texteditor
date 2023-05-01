@@ -32,3 +32,13 @@ target_link_libraries(cutefish-texteditor
   Qt5::Quick
   KF5::SyntaxHighlighting
   )
+
+install(FILES ${QM_FILES} DESTINATION /usr/share/cutefish-texteditor/translations)
+
+install(TARGETS cutefish-texteditor RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+
+install(FILES
+    cutefish-texteditor.desktop
+    DESTINATION /usr/share/applications/
+    COMPONENT Runtime
+)
